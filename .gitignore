@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pyd
+
+# Entornos virtuales
+venv/
+.env/
+.env
+
+# VS Code
+.vscode/
+
+# Archivos de sistema macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Archivos de sincronización
+*.sync
+
+# Archivos de sistema
+.DS_Store
+
+# Logs
+*.log
+
+# Datos
+*.sqlite
+*.db
+
+# Otros
+*.bak
+*.swp
