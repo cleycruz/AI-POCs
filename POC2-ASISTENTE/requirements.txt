@@ -1,0 +1,33 @@
+# --- NÚCLEO Y SERVIDOR ---
+fastapi==0.110.0
+uvicorn==0.27.1
+python-dotenv==1.0.1
+pydantic-settings==2.2.1
+
+# --- SEGURIDAD Y JWT ---
+# (Para proteger tus endpoints de admin y login)
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# --- IA Y BÚSQUEDA (AZURE) ---
+openai==1.12.0
+azure-search-documents==11.4.0
+azure-core==1.30.0
+azure-identity==1.15.0
+
+# --- BASE DE DATOS ---
+pyodbc==5.1.0
+
+# --- OBSERVABILIDAD ---
+azure-monitor-opentelemetry==1.2.0
+opentelemetry-api==1.23.0
+
+# --- TESTING Y CALIDAD ---
+# (Vital para el pipeline de CI/CD)
+pytest==8.1.1
+httpx==0.27.0
+pytest-asyncio==0.23.6
+ruff==0.3.4
+
+# --- DEPENDENCIAS DE INSTALACIÓN ---
+setuptools==68.2.2

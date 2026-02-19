@@ -3,7 +3,7 @@ from typing import Optional
 
 class Settings(BaseSettings):
     # App Settings
-    PROJECT_NAME: str = "Cley Intellignet Invetory"
+    PROJECT_NAME: str = "Cley Intelligent Invetory"
     VERSION: str = "1.0.0"
     API_VERSION_STR: str = "api/v1"
 
@@ -23,7 +23,15 @@ class Settings(BaseSettings):
     AZURE_SEARCH_KEY: str
     AZURE_SEARCH_INDEX: str = "interventory-index"
 
+    # Variables adicionales del .env
+    AZURE_OPENAI_DEPLOYMENT_NAME: Optional[str] = None
+    AZURE_AI_SEARCH_INDEX: Optional[str] = None
+    AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME: Optional[str] = None
+
     # Configuración de Pidantic para leer el .env en desarrollo
     model_config = SettingsConfigDict(env_file=".env", case_sensitive=True)
+
+    # Configuraciòn de applicationInsights
+    APPLICATIONINSIGHTS_CONNECTION_STRING: str = ""
     
 settings = Settings()

@@ -1,9 +1,28 @@
 from dataclasses import dataclass
 from datetime import datetime
 
+
 @dataclass(frozen=True)
 class ProductStock:
-    """Entidad de dominio pura para representar el estado de un producto"""
+    """
+    Entidad de dominio pura para representar el estado de un producto.
+    id: int
+    sku: str
+    name: str
+    current_quantity: int
+    min_threshold: int  # Cantidad mínima antes del alerta
+    last_update: datetime
+
+    Ejemplo:
+        ProductStock(
+            id=1,
+            sku="PROD-123",
+            name="Producto de ejemplo",
+            current_quantity=5,
+            min_threshold=10,
+            last_update=datetime.now()
+        )
+    """
     id: int
     sku: str
     name: str

@@ -1,4 +1,3 @@
-
 # Cley Intelligent Inventory - Asistente Logístico IA
 
 ## Descripción
@@ -50,5 +49,5 @@ pytest
 - Usa Application Insights para monitoreo en producción
 - Mantén requirements.txt actualizado
 
-
-
+## Contacto
+Desarrollado por el equipo de Cley. Para soporte, contacta a tu líder técnico.

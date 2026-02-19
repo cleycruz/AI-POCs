@@ -12,6 +12,14 @@ venv/
 
 # VS Code
 .vscode/
+*.code-workspace
+history/
+settings.json
+launch.json
+tasks.json
+
+# VS Code
+.vscode/
 
 # Archivos de sistema macOS
 .DS_Store
