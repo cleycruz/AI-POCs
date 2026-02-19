@@ -1,54 +1,32 @@
+# Pruebas de Concepto (POC) en Python para Azure AI
 
-# Cley Intelligent Inventory - Asistente Logístico IA
+Este repositorio contiene una colección de pruebas de concepto (POC) desarrolladas en Python, orientadas a la integración y experimentación con los servicios de Azure AI, incluyendo Azure OpenAI y Azure Cognitive Search.
 
-## Descripción
-Asistente logístico inteligente basado en FastAPI, Azure OpenAI, SQL y Azure Cognitive Search. Implementa RAG (Retrieval-Augmented Generation) y análisis estructurado para consultas de inventario y manuales.
+## Objetivo
 
-## Estructura principal
-- **app/main.py**: API y endpoints principales
-- **app/domain/services/orchestrator.py**: Orquestador de lógica IA y datos
-- **app/infrastructure/**: Integraciones con OpenAI, SQL y Search
-- **app/schemas/**: Esquemas Pydantic para validación y respuesta
-- **test/**: Pruebas unitarias y de integración
+El propósito de este repositorio es servir como base y referencia para explorar, validar y demostrar capacidades de inteligencia artificial en la nube de Azure, facilitando la conexión entre modelos de lenguaje, búsqueda semántica y otras herramientas cognitivas.
 
-## Instalación
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+## Contenido
+- Ejemplos de integración con Azure OpenAI (GPT, embeddings, etc.)
+- Implementaciones de RAG (Retrieval Augmented Generation)
+- Conexión y consulta a Azure Cognitive Search
+- Validación de respuestas y buenas prácticas de desarrollo
 
-## Configuración
-Crea un archivo `.env` con tus credenciales de Azure y Application Insights:
-```
-AZURE_OPENAI_ENDPOINT=...
-AZURE_OPENAI_KEY=...
-AZURE_OPENAI_MODEL=gtp-4o
-SQL_SERVER=...
-SQL_DATABASE=...
-SQL_USERNAME=...
-SQL_PASSWORD=...
-AZURE_SEARCH_ENDPOINT=...
-AZURE_SEARCH_KEY=...
-AZURE_SEARCH_INDEX=interventory-index
-APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=...;IngestionEndpoint=...
-```
+## Requisitos
+- Python 3.8+
+- Cuenta y recursos activos en Azure (OpenAI, Cognitive Search)
+- Variables de entorno configuradas en un archivo `.env` (ver `.env.example`)
 
-## Ejecución
-```bash
-uvicorn app.main:app --reload
-```
+## Uso
+1. Clona este repositorio.
+2. Crea y activa un entorno virtual de Python.
+3. Instala las dependencias necesarias.
+4. Configura tus variables de entorno.
+5. Ejecuta los scripts de ejemplo según la documentación de cada POC.
 
-## Pruebas
-```bash
-pytest
-```
+## Notas
+- Este repositorio es solo para fines de experimentación y aprendizaje.
+- No almacenes claves ni datos sensibles en el repositorio.
 
-## Buenas prácticas
-- Usa variables de entorno para secretos
-- Agrega más tests para lógica de negocio y endpoints
-- Usa Application Insights para monitoreo en producción
-- Mantén requirements.txt actualizado
-
-
+---
 
